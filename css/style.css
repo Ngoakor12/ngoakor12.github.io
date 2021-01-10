@@ -3,14 +3,24 @@
 
 /*fonts*/
 
-* {
-    font-family: "open sans", sans-serif;
-    padding: 0;
-    margin: 0;
+@font-face {
+    font-family: 'open-sans-light';
+    src: url('/fonts/OpenSans-Light.ttf') format('ttf');
 }
 
-h1 {
-    font-weight: 800;
+@font-face {
+    font-family: 'open-sans-regular';
+    src: url('/fonts/OpenSans-Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'open-sans-bold';
+    src: url('/fonts/OpenSans-Bold.ttf ') format('ttf');
+}
+
+@font-face {
+    font-family: 'open-sans-extrabold';
+    src: url('/fonts/OpenSans-ExtraBold.ttf ') format('ttf');
 }
 
 
