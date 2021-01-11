@@ -1,5 +1,10 @@
 /*variables*/
 
+:root {
+    --primary: #00FFA3;
+    --secondary: #252C35;
+}
+
 
 /*fonts*/
 
@@ -26,8 +31,27 @@
 
 /*reset*/
 
+li {
+    list-style-type: none;
+}
+
+body,p,a,ul,li,h1,figure,input {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
 
 /*base styling*/
+
+/*.primary-btn {
+    background-color: #00FFA3;
+    color: #252C35;
+    border-radius: 5px;
+    padding: 20px 80px;
+    text-transform: uppercase;
+
+}*/
 
 
 /*mobile styling*/
@@ -35,8 +59,14 @@
 
 /*tablet styling*/
 
+@media screen and(min-width: 620px) {}
+
 
 /*laptop styling*/
 
+@media screen and(min-width: 960px) {}
+
 
 /*desktop styling*/
+
+@media screen and(min-width: 1200px) {}
