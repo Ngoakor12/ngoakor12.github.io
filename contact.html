@@ -4,47 +4,44 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width-device-width, initial-scale=1">
-    <title>Ngoako Ramokgopa - Web Developer</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:
-    ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" type="text/html" rel="stylesheet">
+    <title>Ngoako Ramokgopa - Frontend Developer</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" type="image/png" href="#">
+    <link rel="icon" type="image/svg" href="/media/logo-white.svg">
+    <script src="https://kit.fontawesome.com/b2f7484c6f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <a href="index.html"><img src="#" alt="logo" class="logo"></a>
+            <a href="index.html"><img src="media/logo-blue.svg" alt="logo" class="logo"></a>
             <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a class="active" href="contact.html">Contact</a></li>
-                </ul>
+                <a class="active" href="work.html">Work</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </header>
-        <section class="contact">
+        <section id="contact">
             <h1>Get in touch</h1>
-            <div class="contact-work">
-                <h2>Work Inquiries</h2>
-                <p>ngoakor12@gmail.com</p>
-                <p>+27716462122</p>
-                <br><br>
-                <a class="inline" href="https://www.instagram.com/ngoakoramz/" target="_blank">Instagram</a>
-                <a class="inline" href="https://www.facebook.com/ngoakoramz/" target="_blank">Facebook</a>
-                <a class="inline" href="https://www.twitter.com/ngoakoramz/" target="_blank">Twitter</a>
-            </div>
+            <p>If you have a project that needs a web developer or just have a question contact me (details below) or fill in the form...</p>
+            <p class="contact-option1"><i class="fas fa-envelope"></i></i>Ngoakor12@gmail.com</p>
+            <p class="contact-option1"><i class="fas fa-phone-alt"></i>0716462122</p>
+            <form action="" class="contact-option2">
+                <input type="text" name="name" placeholder="Name"><br>
+                <input type="email" name="email" placeholder="Email"><br>
+                <textarea name="message" placeholder="Message"></textarea><br>
+                <input class="primary-btn" type="submit" name="Submit">
+            </form>
         </section>
         <footer>
             <div class="social-links">
-                <a href="https://github.com/Ngoakor12" target="_blank"><i class="fab fa-github-square"></i></a>
-                <a href="https://twitter.com/NgoakoRamz" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                <a href="https://instagram.com/ngoakoramz" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://github.com/Ngoakor12" target="_blank"><img src="/media/github-square-brands.svg" alt=""></a>
+                <a href="https://twitter.com/NgoakoRamz" target="_blank"><img src="/media/twitter-square-brands.svg" alt=""></a>
+                <a href="https://instagram.com/ngoakoramz" target="_blank"><img src="/media/instagram-square-brands.svg" alt=""></a>
             </div>
             <p>Copyright &copy; 2021. Ngoako Ramokgopa</p>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
