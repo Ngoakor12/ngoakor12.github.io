@@ -1,2 +1,2 @@
 # ngoakor12.github.io
-## Link to my portforlio: <a href="https://ngoakor12.github.io/">ngoakor12.github.io</a>
+## Link to my (work-in-progress) portfolio: <a href="https://ngoakor12.github.io/" target="_blank">ngoakor12.github.io</a>
