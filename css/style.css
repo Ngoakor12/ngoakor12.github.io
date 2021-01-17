@@ -10,23 +10,40 @@
 
 @font-face {
     font-family: 'open-sans-light';
-    src: url('/fonts/OpenSans-Light.ttf') format('ttf');
+    src: local('open-sans');
+    src: url('../fonts/open-sans-light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
 }
-
 @font-face {
     font-family: 'open-sans-regular';
-    src: url('/fonts/OpenSans-Regular.ttf') format('ttf');
+    src: local('open-sans');
+    src: url('../fonts/open-sans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-
 @font-face {
     font-family: 'open-sans-bold';
-    src: url('../fonts/OpenSans-Bold.ttf') format('ttf');
+    src: local('open-sans');
+    src: url('../fonts/open-sans-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
 }
-
+@font-face {
+    font-family: 'open-sans-semibold';
+    src: local('open-sans');
+    src: url('../fonts/open-sans-semibold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
 @font-face {
     font-family: 'open-sans-extrabold';
-    src: url('/fonts/OpenSans-ExtraBold.ttf') format('ttf');
+    src: local('open-sans');
+    src: url('../fonts/open-sans-extrabold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
 }
+
 .primary-btn,.secondary-btn{
     font-family: "open sans";
     font-weight: bold;
@@ -91,7 +108,7 @@ header a{
     grid-row: 1;
 }
 h1{
-    font-weight: 900;
+    font-family: 'open-sans-extrabold';
     padding-bottom: 10px;
     border-bottom: var(--primary) 5px solid;
     bottom:auto;
