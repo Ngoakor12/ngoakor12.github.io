@@ -1,13 +1,4 @@
-/*variables*/
-:root {
-    --primary: #00FFA3;
-    --secondary: #252C35;
-    --grey: #E0E0E0;
-}
-
-
-/*fonts*/
-
+/*Link*/
 @font-face {
     font-family: 'open-sans-light';
     src: local('open-sans');
@@ -44,54 +35,57 @@
     font-style: normal;
 }
 
-.primary-btn,.secondary-btn{
-    font-family: "open sans";
-    font-weight: bold;
-}
-body{
-    font-family: 'Open Sans',sans-serif;
-}
-
-.primary-btn,.secondary-btn{
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-}
-a,li,p i{
-    color: var(--grey);
+/*variables*/
+:root {
+    --primary: #00FFA3;
+    --secondary: #252C35;
+    --grey: #E0E0E0;
+    --sizzling-red: #ff475a;
+    --sea-green-crayola: #47ffbc;
+    --alice-blue: #eef7ff;
+    --prussian-blue: #002b3d;
 
 }
-#work p,#work h1 #about h1 {
-    color: var(--secondary);
-}
-p{font-size: 26px;}
 
 /*reset*/
 *{
     box-sizing: border-box;
 }
-li {
-    list-style-type: none;
+body{
+    font-family: 'open-sans-regular';
+    font-size: 18px;
+    width: 100%;
+    min-width: 20%;
+    margin: 0;
 }
-
 body,p,a,ul,li {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
-#about p{
+li {
+    list-style-type: none;
+}
+
+
+/*fonts*/
+
+.primary-btn,.secondary-btn{
+    font-family: 'open-sans-bold';
     font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+a,li,p i{
+    color: var(--alice-blue);
+}
+#work p,#work h1 #about h1 {
+    color: var(--secondary);
 }
 
 
 /*base styling*/
-body{
-    font-size: 20px;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    min-width: 360px;
-}
+
 header{
     position: absolute;
     top: 0px;
@@ -100,8 +94,7 @@ header{
 header{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    max-width: 100%;
-    padding: 20px;
+    padding: 20px 0;
 }
 header a{
     grid-column: 1/2;
@@ -110,12 +103,11 @@ header a{
 h1{
     font-family: 'open-sans-extrabold';
     padding-bottom: 10px;
-    border-bottom: var(--primary) 5px solid;
+    border-bottom: var(--sea-green-crayola) 5px solid;
     bottom:auto;
-    width: 300px;
 }
 .logo{
-    width: 80px;
+    width: 75px;
 }
 
 #hero {
@@ -124,39 +116,34 @@ h1{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 150px 20px 50px 20px;
-    color: white;
-    max-width: 100%;
-    margin: 0 auto;
+    padding: 150px 0 50px 0;
+    color: var(--alice-blue);
     display: grid;
     grid-template-columns: repeat(12,1fr);
   }
 #hero p:nth-child(1){
-    grid-column: 1/12 ;
+    grid-column: 2/11 ;
     grid-row: 1; 
-    width: 300px;
 }
 #hero p:nth-child(2){
-    grid-column: 1/12 ;
+    grid-column: 2/11 ;
     grid-row: 2;
-    color: var(--primary);
-    width: 300px;
+    color: var(--sea-green-crayola);
 }
 #hero p:nth-child(3){
-    grid-column: 1/12 ;
+    grid-column: 2/11 ;
     grid-row: 3;
-    width: 300px;
     line-height: 107%;
     margin: 5px 0 50px 0;
 }
 #hero a:nth-child(4){
-    grid-column: 1/12 ;
+    grid-column: 2/11 ;
     grid-row: 4;
     width: 300px;
     margin: 20px 0 0 0;
 }
 #hero a:nth-child(5){
-    grid-column: 1/12 ;
+    grid-column: 2/11 ;
     grid-row: 5;
     margin: 10px 0 0 0;
     width: 300px;
@@ -166,37 +153,33 @@ h1{
     font-weight: 800;
     line-height: 44px;
 }
-p.hero-description{
-    margin:0;
-    padding: 0;
-}
 
 #work{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    padding: 20px;
+    padding: 20px 0;
 }
 #work h1{
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 1;
     font-size: 36px;
     color: var(--secondary);
 }
 #work div{
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 2;
     display: grid;
     grid-template-columns: repeat(12,1fr);
     gap: 10px;
 }
 #work a:nth-child(3){
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 3;
     margin: 50px 0 0 0;
     width: 300px;
 }
 #work a:nth-child(4){
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 4;
     margin: 10px 0 50px 0;
     width: 300px;
@@ -206,20 +189,19 @@ p.hero-description{
     border-radius: 5px;
 }
 .work-items a{
-    text-align: left;
     width: 300px;
 }
 
 .work-items a:nth-child(1){
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 1;
 }
 .work-items a:nth-child(2){
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 2;
 }
 .work-items a:nth-child(3){
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 3;
     margin: 0 0 50px 0;
 }
@@ -227,10 +209,10 @@ p.hero-description{
 #skills{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    padding: 20px;
+    padding: 20px 0;
 }
 #skills h1:nth-child(1){
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 1;
     font-size: 36px;
     margin: 30px 0 0 0;
@@ -238,23 +220,23 @@ p.hero-description{
     padding-bottom: 0;
 }
 #skills h1:nth-child(2){
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 2;
     font-size: 36px;
     margin: 0 0 30px 0;
 }
 #skills div:nth-child(3){
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 3;
 }
 #skills a:nth-child(4){
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 4;
     width: 300px;
     margin: 50px 0 0 0;
 }
 #skills a:nth-child(5){
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 5;
     width: 300px;
     margin: 10px 0 30px 0;
@@ -267,39 +249,39 @@ p.hero-description{
 }
 #skills,#contact{
     background: var(--secondary);
-    color: white;
+    color: var(--alice-blue);
 }
 
 #about{
     display: grid;
-    padding: 20px;
+    grid-template-columns: repeat(12,1fr);
+    padding: 20px 0;
 }
 #about h1{
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 1;
     color: var(--secondary);
     font-size: 36px;
 }
 #about img{
-    width: 300px;
+    max-width: 100%;
     border-radius: 5px;
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 2;   
 }
 #about p{
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 3;
-    width: 300px;
     line-height: 30px;
     margin: 20px 0 30px 0;
 }
 #about a:nth-child(4){
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 4;
     width: 300px;
 }
 #about a:nth-child(5){
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 5;
     width: 300px;
     margin: 10px 0 30px 0;
@@ -308,9 +290,9 @@ p.hero-description{
 
  
 .primary-btn{
-    background: var(--primary);
+    background: var(--sea-green-crayola);
     color: var(--secondary);
-    border: var(--primary) 4px solid;
+    border: var(--sea-green-crayola) 4px solid;
     border-radius: 5px;
     padding: 10px 80px;
     text-transform: uppercase;
@@ -318,13 +300,13 @@ p.hero-description{
 }
 .primary-btn:hover{
     background: var(--secondary);
-    color: var(--primary);
+    color: var(--sea-green-crayola);
     border: var(--secondary) 4px solid;
 }
 #hero .primary-btn:hover,#skills .primary-btn:hover,#contact .primary-btn:hover{
     background: none;
-    color: white;
-    border: var(--primary) 4px solid;
+    color: var(--alice-blue);
+    border: var(--sea-green-crayola) 4px solid;
 }
 .secondary-btn{
     background: none;
@@ -337,8 +319,8 @@ p.hero-description{
 }
 #hero .secondary-btn, #skills .secondary-btn{
     background: none;
-    color: white;
-    border: white 4px solid;
+    color: var(--alice-blue);
+    border: var(--alice-blue) 4px solid;
 }
 #about a.secondary-btn{
     padding: 10px 89px;
@@ -350,14 +332,14 @@ p.hero-description{
     padding: 10px 100px;
 }
 .secondary-btn:hover{
-    background: var(--primary);
+    background: var(--sea-green-crayola);
     color: var(--secondary);
-    border: var(--primary) 4px solid;
+    border: var(--sea-green-crayola) 4px solid;
  }
 #hero .secondary-btn:hover,#skills .secondary-btn:hover{
-    background: var(--primary);
+    background: var(--sea-green-crayola);
     color: var(--secondary);
-    border: var(--primary) 4px solid;
+    border: var(--sea-green-crayola) 4px solid;
  }
 
 
@@ -365,39 +347,30 @@ p.hero-description{
 #contact{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    padding: 20px;
+    padding: 20px 0;
 }
 #contact h1{
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 1;
     font-size: 36px;
 }
 #contact p:nth-child(2){
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 2;
-    width: 300px;
-    font-size: 18px;
-    padding-bottom: 10px;
 }
 #contact p:nth-child(3){
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 3;
-    width: 300px;
-    font-size: 18px;
-    font-weight: bold;
 }
 #contact p:nth-child(4){
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 4;
-    width: 300px;
-    font-size: 18px;
-    font-weight: bold;
 }
 #contact p i {
     padding-right: 10px;
 }
 #contact form{
-    grid-column: 1/12;
+    grid-column: 2/11;
     grid-row: 6;
     width: 300px;
     margin: 20px 0 0 0;
@@ -420,22 +393,18 @@ footer{
     color: var(--secondary);
     text-align: center;
     padding: 20px;
-    background: var(--grey);
+    background: var(--alice-blue);
 }
 footer img {
     max-width: 40px;
     margin: 20px auto;
-    fill: var(--primary);
+    fill: var(--sea-green-crayola);
 }
 footer p{
     font-size: 18px;
     
 }
 
-#hero,#work,#skills,#about,#contact{
-    max-width: 100%;
-    margin: auto;
-}
 
 
 
@@ -450,8 +419,7 @@ nav{
     header{
         display: grid;
         grid-template-columns: repeat(12,1fr);
-        width: 100%;
-        padding: 20px;
+        padding: 20px 0;
     }
     header a{
         grid-column: 1/2;
@@ -480,7 +448,7 @@ nav{
         margin: 0 10px;
     }
     nav a:hover{
-        color: var(--primary);
+        color: var(--sea-green-crayola);
     }
 
     
@@ -528,7 +496,7 @@ nav{
         background-repeat: no-repeat;
         background-size: cover;
         padding: 250px 20px 150px 20px;
-        color: white;
+        color: var(--alice-blue);
         max-width: 100%;
         margin: 0 auto;
         display: grid;
@@ -542,7 +510,7 @@ nav{
     #hero p:nth-child(2){
         grid-column: 3/9 ;
         grid-row: 2;
-        color: var(--primary);
+        color: var(--sea-green-crayola);
         width: 600px;
     }
     #hero p:nth-child(3){
@@ -664,7 +632,7 @@ nav{
         font-size: 36px;
     }
     #about img{
-        width: 200px;
+        max-width: 100%;
         border-radius: 5px;
         grid-column: 3/5;
         grid-row: 2;   
@@ -672,7 +640,6 @@ nav{
     #about p{
         grid-column: 6/9;
         grid-row: 2;
-        width: 400px;
         line-height: 30px;
         margin: 0 0 30px 0;
     }
