@@ -48,7 +48,6 @@
     --sea-green-crayola: #47ffbc;
     --alice-blue: #eef7ff;
     --prussian-blue: #002b3d;
-
 }
 
 /*reset*/
@@ -84,7 +83,6 @@ li {
     list-style-type: none;
 }
 
-
 /*fonts*/
 
 .primary-btn,
@@ -101,22 +99,34 @@ p i {
     color: var(--alice-blue);
 }
 
+h1,
+h2 {
+    font-family: 'open-sans-extrabold';
+    font-size: 36px;
+}
+
+.hero-heading {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 44px;
+}
+
 #work p,
 #work h2 #about h2 {
     color: var(--secondary);
 }
 
-
-/*base styling*/
-h1 {
-    font-family: 'open-sans-extrabold';
+p {
+    font-size: 18px;
 }
 
+/*base styling*/
+
+
 h2 {
-    font-family: 'open-sans-extrabold';
     padding-bottom: 10px;
+    margin: 30px 0;
     border-bottom: var(--sea-green-crayola) 5px solid;
-    bottom: auto;
 }
 
 #hero-wrapper {
@@ -125,10 +135,10 @@ h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* padding: 150px 0 50px 0; */
     color: var(--alice-blue);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding: 20px 0;
 }
 
 header {
@@ -136,7 +146,6 @@ header {
     grid-row: 1;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-
 }
 
 img.logo {
@@ -177,24 +186,20 @@ header a {
 #hero a:nth-child(4) {
     grid-column: 2/12;
     grid-row: 4;
-    width: 300px;
+    /* min-width: 300px; */
     height: 53px;
-    margin: 20px 0 0 0;
+    margin: 10px 0;
 }
 
 #hero a:nth-child(5) {
     grid-column: 2/12;
     grid-row: 5;
-    margin: 10px 0 0 0;
-    width: 300px;
+    margin: 10px 0;
+    /* min-width: 300px; */
     height: 53px;
 }
 
-.hero-heading {
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 44px;
-}
+
 
 #work {
     display: grid;
@@ -221,14 +226,14 @@ header a {
     grid-column: 2/12;
     grid-row: 3;
     margin: 50px 0 0 0;
-    width: 300px;
+    /* width: 300px; */
 }
 
 #work a:nth-child(4) {
     grid-column: 2/12;
     grid-row: 4;
     margin: 10px 0 50px 0;
-    width: 300px;
+    /* width: 300px; */
 }
 
 .work-items {
@@ -244,7 +249,6 @@ header a {
     max-width: 100%;
     border-radius: 5px;
 }
-
 
 .work-items a:nth-child(1) {
     grid-column: 1/-1;
@@ -271,7 +275,6 @@ header a {
 #skills h2:nth-child(1) {
     grid-column: 2/12;
     grid-row: 1;
-    font-size: 36px;
     margin: 30px 0 0 0;
     border-bottom: none;
     padding-bottom: 0;
@@ -280,7 +283,6 @@ header a {
 #skills h2:nth-child(2) {
     grid-column: 2/12;
     grid-row: 2;
-    font-size: 36px;
     margin: 0 0 30px 0;
 }
 
@@ -292,14 +294,14 @@ header a {
 #skills a:nth-child(4) {
     grid-column: 2/12;
     grid-row: 4;
-    width: 300px;
+    /* width: 300px; */
     margin: 50px 0 0 0;
 }
 
 #skills a:nth-child(5) {
     grid-column: 2/12;
     grid-row: 5;
-    width: 300px;
+    /* width: 300px; */
     margin: 10px 0 30px 0;
 }
 
@@ -327,7 +329,6 @@ header a {
     grid-column: 2/12;
     grid-row: 1;
     color: var(--secondary);
-    font-size: 36px;
 }
 
 #about img {
@@ -347,17 +348,15 @@ header a {
 #about a:nth-child(4) {
     grid-column: 2/12;
     grid-row: 4;
-    width: 300px;
+    /* width: 300px; */
 }
 
 #about a:nth-child(5) {
     grid-column: 2/12;
     grid-row: 5;
-    width: 300px;
+    /* width: 300px; */
     margin: 10px 0 30px 0;
 }
-
-
 
 .primary-btn,
 button.submit {
@@ -366,7 +365,7 @@ button.submit {
     border: var(--sea-green-crayola) 4px solid;
     border-radius: 5px;
     padding: 10px 80px;
-    width: 300px;
+    /* width: 300px; */
     text-transform: uppercase;
     display: inline-block;
 }
@@ -391,7 +390,7 @@ button.submit {
     border: var(--secondary) 4px solid;
     border-radius: 5px;
     padding: 10px 20px;
-    width: 300px;
+    /* width: 300px; */
     text-transform: uppercase;
     display: inline-block;
 }
@@ -416,8 +415,6 @@ button.submit {
     border: var(--sea-green-crayola) 4px solid;
 }
 
-
-
 #contact {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -427,7 +424,6 @@ button.submit {
 #contact h2 {
     grid-column: 2/12;
     grid-row: 1;
-    font-size: 36px;
 }
 
 #contact p:nth-child(2) {
@@ -453,7 +449,7 @@ button.submit {
 button.submit {
     grid-column: 2/12;
     grid-row: 6;
-    min-width: 300px;
+    /* min-width: 300px; */
     margin: 20px 0 0 0;
 }
 
@@ -461,7 +457,7 @@ button.submit {
 textarea {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
-    min-width: 300px;
+    /* min-width: 300px; */
     margin: 10px 0;
     padding: 10px 20px;
     border-radius: 4px;
@@ -495,9 +491,6 @@ footer img {
 footer p {
     font-size: 18px;
 }
-
-
-
 
 /*mobile styling*/
 nav {
