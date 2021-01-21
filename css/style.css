@@ -144,19 +144,28 @@ h2 {
 header {
     grid-column: 2/12;
     grid-row: 1;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    height: 75px;
+    display: flex;
+    /* grid-template-columns: repeat(12, 1fr); */
+    align-items: center;
+    justify-content: space-between;
 }
 
 img.logo {
     display: block;
-    grid-column: 1/-1;
+    /* grid-column: 1/6;
+    grid-row: 1; */
     width: 75px;
 }
 
-header a {
-    grid-column: 1/-1;
+/* nav{
+    grid-column: 6/12;
+    grid-row: 1; 
+} */
+nav a{
+    padding: 10px;
 }
+
 
 #hero {
     grid-column: 1/-1;
@@ -164,15 +173,26 @@ header a {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
-
+.hero-text{
+    grid-column: 2/12;
+    grid-row: 1;
+    /* display: grid;
+    grid-template-columns: repeat(12,1fr); */
+}
+.hero-buttons{
+    grid-column: 2/12;
+    grid-row: 2;
+    /* display: grid;
+    grid-template-columns: repeat(12, 1fr); */
+}
 #hero h1:nth-child(1) {
     grid-column: 2/12;
     grid-row: 1;
 }
 
 #hero h1:nth-child(2) {
-    grid-column: 2/12;
-    grid-row: 2;
+    /* grid-column: 2/12;
+    grid-row: 2; */
     color: var(--sea-green-crayola);
 }
 
@@ -183,20 +203,22 @@ header a {
     margin: 5px 0 50px 0;
 }
 
-#hero a:nth-child(4) {
+.hero-buttons a:nth-child(1) {
     grid-column: 2/12;
-    grid-row: 4;
+    grid-row: 1;
     /* min-width: 300px; */
     height: 53px;
     margin: 10px 0;
+    display: block;
 }
 
-#hero a:nth-child(5) {
+.hero-buttons a:nth-child(2) {
     grid-column: 2/12;
-    grid-row: 5;
+    grid-row: 2;
     margin: 10px 0;
     /* min-width: 300px; */
     height: 53px;
+    display: block;
 }
 
 
@@ -449,7 +471,7 @@ button.submit {
 button.submit {
     grid-column: 2/12;
     grid-row: 6;
-    /* min-width: 300px; */
+    min-width: 300px;
     margin: 20px 0 0 0;
 }
 
@@ -457,7 +479,7 @@ button.submit {
 textarea {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
-    /* min-width: 300px; */
+    min-width: 300px;
     margin: 10px 0;
     padding: 10px 20px;
     border-radius: 4px;
