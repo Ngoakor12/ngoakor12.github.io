@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <main class="container">
         <section id="hero-wrapper">
             <header>
                 <a href="index.html"><img src="media/logo-blue.svg" alt="logo" class="logo"></a>
@@ -23,11 +23,15 @@
                 </nav>
             </header>
             <section id="hero">
-                <h1 class="hero-heading">Hi, I'm Ngoako</h1>
-                <h1 class="hero-heading">(Frontend Developer)</h1>
-                <p class="hero-description">I create beautiful and functional interfaces</p>
-                <a class="primary-btn" href="#contact">Contact</a>
-                <a class="secondary-btn" href="#work">View Work</a>
+                <div class="hero-text">
+                    <h1 class="hero-heading">Hi, I'm Ngoako</h1>
+                    <h1 class="hero-heading">(Frontend Developer)</h1>
+                    <p class="hero-description">I create beautiful and functional interfaces</p>
+                </div>
+                <div class="hero-buttons">
+                    <a class="primary-btn" href="#contact">Contact</a>
+                    <a class="secondary-btn" href="#work">View Work</a>
+                </div>
             </section>
         </section>
         <section id="work">
@@ -80,8 +84,10 @@
             <p class="contact-option1"><i class="fas fa-envelope"></i></i>Ngoakor12@gmail.com</p>
             <p class="contact-option1"><i class="fas fa-phone-alt"></i>0716462122</p>
             <form action="" class="contact-option2">
-                <input type="text" name="name" placeholder="Name"><br>
-                <input type="email" name="email" placeholder="Email"><br>
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Name"><br>
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Email"><br>
                 <textarea name="message" placeholder="Message"></textarea><br>
                 <button type="submit" name="submit" class="submit">Submit</button>
             </form>
@@ -97,7 +103,7 @@
             </div>
             <p>Copyright &copy; 2021. Ngoako Ramokgopa</p>
         </footer>
-    </div>
+    </main>
     <script src="script.js"></script>
 </body>
 
