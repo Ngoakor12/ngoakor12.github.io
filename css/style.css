@@ -83,6 +83,61 @@ li {
     list-style-type: none;
 }
 
+/* Gives breathing space to jump-to-achor-links */
+[id] {
+    scroll-margin-top: 2em;
+}
+
+/* Custom scroll bar */
+/* Approach 1 */
+/* ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  html {
+    scrollbar-width: none;
+  }
+  #progressBarContainer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  #progressBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: var(--sea-green-crayola);
+    height: 0;
+    opacity: 50%;
+  } */
+
+
+/* Approach 2 */
+
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  } 
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;  
+}
+   
+  /* Handle*/
+  ::-webkit-scrollbar-thumb {
+    background: var(--sea-green-crayola); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--sizzling-red); 
+  }
+
 /*fonts*/
 
 .primary-btn,
