@@ -45,7 +45,7 @@
     --secondary: #252C35;
     --grey: #E0E0E0;
     --sizzling-red: #ff475a;
-    --sea-green-crayola: #47ffbc;
+    --sea-green-crayola: rgba(71, 255, 188, 1);;
     --alice-blue: #eef7ff;
     --prussian-blue: #002b3d;
 }
@@ -223,6 +223,15 @@ img.logo {
 } */
 nav a{
     padding: 10px;
+}
+
+nav a:hover{
+    color: var(--sea-green-crayola);
+    background-color: rgba(71, 255, 188, 0.1);;
+    border-radius: 4px;
+}
+nav .active{
+    color: var(--sea-green-crayola);
 }
 
 
