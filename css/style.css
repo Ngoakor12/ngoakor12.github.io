@@ -63,7 +63,7 @@ html {
 
 body {
     font-family: 'open-sans-regular';
-    font-size: 18px;
+    font-size: 18rem;
     width: 100%;
     min-width: 300px;
     margin: 0;
@@ -139,11 +139,14 @@ li {
   }
 
 /*fonts*/
+html{
+    font-size: 1px;
+}
 
 .primary-btn,
 .secondary-btn {
     font-family: 'open-sans-bold';
-    font-size: 18px;
+    font-size: 18rem;
     font-weight: bold;
     text-align: center;
 }
@@ -157,11 +160,11 @@ p i {
 h1,
 h2 {
     font-family: 'open-sans-extrabold';
-    font-size: 36px;
+    font-size: 36rem;
 }
 
 .hero-heading {
-    font-size: 40px;
+    font-size: 40rem;
     font-weight: 800;
     line-height: 44px;
 }
@@ -172,7 +175,7 @@ h2 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 18rem;
 }
 
 /*base styling*/
@@ -287,7 +290,7 @@ nav a{
 #work h2 {
     grid-column: 2/12;
     grid-row: 1;
-    font-size: 36px;
+    font-size: 36rem;
     color: var(--secondary);
 }
 
@@ -533,7 +536,7 @@ button.submit {
 #contact input,
 textarea {
     font-family: "Open Sans", sans-serif;
-    font-size: 18px;
+    font-size: 18rem;
     min-width: 300px;
     margin: 10px 0;
     padding: 10px 20px;
@@ -543,7 +546,7 @@ textarea {
 
 button.submit {
     font-family: 'open-sans-bold';
-    font-size: 18px;
+    font-size: 18rem;
     cursor: pointer;
     background-color: var(--sea-green-crayola);
 }
@@ -566,7 +569,7 @@ footer img {
 }
 
 footer p {
-    font-size: 18px;
+    font-size: 18rem;
 }
 
 /*mobile styling*/
