@@ -581,7 +581,7 @@ footer a i:hover {
 }
 
 /* Scroll to top button */
-/* #myBtn {
+#myBtn {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -600,7 +600,7 @@ footer a i:hover {
   }
   #myBtn i:hover{
     color: var(--sizzling-red);
-  }*/
+  }
   
   /* #myBtn:hover {
     background-color: var(--sizzling-red);
