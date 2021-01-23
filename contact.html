@@ -12,35 +12,44 @@
 
 <body>
     <main class="container">
+
         <header>
             <a href="index.html"><img src="media/logo-blue.svg" alt="logo" class="logo"></a>
             <nav>
-                <a class="active" href="work.html">Work</a>
+                <a href="index.html">Home</a>
+                <a href="work.html">Work</a>
                 <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="active">Contact</a>
             </nav>
         </header>
         <section id="contact">
-            <h1>Get in touch</h1>
-            <p>If you have a project that needs a web developer or just have a question contact me (details below) or fill in the form...</p>
+            <h2>Get in touch</h2>
+            <p>If you have a project that needs a web developer or just have a question contact me (details below) or
+                fill in the form...</p>
             <p class="contact-option1"><i class="fas fa-envelope"></i></i>Ngoakor12@gmail.com</p>
             <p class="contact-option1"><i class="fas fa-phone-alt"></i>0716462122</p>
             <form action="" class="contact-option2">
-                <input type="text" name="name" placeholder="Name"><br>
-                <input type="email" name="email" placeholder="Email"><br>
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Name"><br>
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Email"><br>
                 <textarea name="message" placeholder="Message"></textarea><br>
-                <input class="primary-btn" type="submit" name="Submit">
+                <button type="submit" name="submit" class="submit">Submit</button>
             </form>
         </section>
         <footer>
             <div class="social-links">
-                <a href="https://github.com/Ngoakor12" target="_blank"><img src="/media/github-square-brands.svg" alt=""></a>
-                <a href="https://twitter.com/NgoakoRamz" target="_blank"><img src="/media/twitter-square-brands.svg" alt=""></a>
-                <a href="https://instagram.com/ngoakoramz" target="_blank"><img src="/media/instagram-square-brands.svg" alt=""></a>
+                <a href="https://github.com/Ngoakor12" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a href="https://twitter.com/NgoakoRamz" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://instagram.com/ngoakoramz" target="_blank"><i class="fab fa-instagram-square"></i></a>
             </div>
             <p>Copyright &copy; 2021. Ngoako Ramokgopa</p>
         </footer>
+        <div id="progressBar"></div>
+        <div id="progressBarContainer"></div>
+        <a onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up fa-"></i></a>
     </main>
+
     <script src="script.js"></script>
 </body>
 
