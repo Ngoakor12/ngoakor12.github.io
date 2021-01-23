@@ -176,6 +176,7 @@ h2 {
 
 p {
     font-size: 18rem;
+    line-height: 28rem;
 }
 
 /*base styling*/
@@ -236,6 +237,8 @@ nav a{
     grid-row: 1;
     /* display: grid;
     grid-template-columns: repeat(12,1fr); */
+    line-height: 28rem;
+
 }
 .hero-buttons{
     grid-column: 2/12;
@@ -562,15 +565,46 @@ footer {
     background: var(--alice-blue);
 }
 
-footer img {
-    max-width: 40px;
+footer a {
+    /* max-width: 40px; */
     margin: 20px auto;
-    fill: var(--sea-green-crayola);
 }
 
-footer p {
-    font-size: 18rem;
+footer a i {
+    font-size: 40rem;
+    margin: 20px 5px;
+    color: var(--secondary);
 }
+
+footer a i:hover {
+    color: var(--sizzling-red);
+}
+
+/* Scroll to top button */
+/* #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-weight: 900;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    background: none;
+  } 
+  #myBtn i{
+    font-size: 50rem;
+    color: var(--sea-green-crayola);
+  }
+  #myBtn i:hover{
+    color: var(--sizzling-red);
+  }*/
+  
+  /* #myBtn:hover {
+    background-color: var(--sizzling-red);
+  } */
 
 /*mobile styling*/
 nav {
