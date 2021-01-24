@@ -228,7 +228,6 @@ nav a {
 nav a:hover {
     color: var(--sea-green-crayola);
     background-color: rgba(71, 255, 188, 0.1);
-    ;
     border-radius: 4px;
 }
 
@@ -590,23 +589,24 @@ button.submit {
 footer {
     color: var(--secondary);
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     background: var(--alice-blue);
 }
 
 footer a {
     /* max-width: 40px; */
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 footer a i {
     font-size: 40rem;
-    margin: 20px 5px;
+    margin: 10px;
     color: var(--secondary);
 }
 
 footer a i:hover {
     color: var(--sizzling-red);
+
 }
 
 /* Scroll to top button */
