@@ -669,11 +669,19 @@ nav {
 
 
 /*laptop styling*/
-/* @media only screen and (min-width: 960px) {
-    
-
-} */
+ @media (min-width: 960px) {
+     html{
+         font-size: 1.20px;
+     }
+}
 
 /*desktop styling*/
 
-/* @media screen and(min-width: 1200px) {} */
+@media(min-width: 1200px) {
+    html{
+        font-size: 1.25px;
+    }
+    .hero-text,.hero-buttons,header{
+        grid-column: 3/11;
+    }
+}
