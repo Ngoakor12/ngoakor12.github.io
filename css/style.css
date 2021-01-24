@@ -656,14 +656,14 @@ nav {
     .primary-btn,.secondary-btn{
         max-width: 300px;
     }
-    /* #hero{
+    #hero{
         align-content: flex-start;
         align-items: flex-start;
     }
     .hero-text>*{
         align-items: flex-end;
         padding: 4px;
-    } */
+    }
 
 }
 
