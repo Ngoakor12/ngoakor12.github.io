@@ -549,6 +549,7 @@ button.submit:hover {
 #contact p:nth-child(3) {
     grid-column: 2/12;
     grid-row: 3;
+    margin: 20px 0 0 0;
 }
 
 #contact p:nth-child(4) {
@@ -560,11 +561,8 @@ button.submit:hover {
     padding-right: 10px;
 }
 
-#contact form,
-button.submit {
+#contact form{
     grid-column: 2/12;
-    grid-row: 6;
-    min-width: 300px;
     margin: 20px 0 0 0;
 }
 
@@ -584,7 +582,8 @@ button.submit {
     font-size: 18rem;
     cursor: pointer;
     background-color: var(--sea-green-crayola);
-    margin-bottom: 30px;
+    margin: 5px 0 30px 0;
+    min-width: 300px;
 }
 
 
@@ -647,11 +646,24 @@ nav {
 /*tablet styling*/
 
 @media (min-width: 620px) {
+    html{
+        font-size: 1.15px;
+    }
     nav {
         visibility: visible;
     }
-
     
+    .primary-btn,.secondary-btn{
+        max-width: 300px;
+    }
+    /* #hero{
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .hero-text>*{
+        align-items: flex-end;
+        padding: 4px;
+    } */
 
 }
 
