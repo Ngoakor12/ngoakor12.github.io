@@ -647,7 +647,7 @@ nav {
 
 @media (min-width: 620px) {
     html{
-        font-size: 1.15px;
+        font-size: 1.1px;
     }
     nav {
         visibility: visible;
@@ -671,16 +671,13 @@ nav {
 /*laptop styling*/
  @media (min-width: 960px) {
      html{
-         font-size: 1.20px;
+         font-size: 1.15px;
      }
 }
 
 /*desktop styling*/
 
-@media(min-width: 1200px) {
-    html{
-        font-size: 1.25px;
-    }
+@media(min-width: 1360px) {
     .hero-text,.hero-buttons,header{
         grid-column: 3/11;
     }
