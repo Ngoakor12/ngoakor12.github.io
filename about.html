@@ -11,33 +11,57 @@
 </head>
 
 <body>
-    <div class="container">
+    <main class="container">
         <header>
             <a href="index.html"><img src="media/logo-blue.svg" alt="logo" class="logo"></a>
             <nav>
-                <a class="active" href="work.html">Work</a>
-                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+                <a href="work.html">Work</a>
+                <a href="about.html" class="active">About</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </header>
         <section id="about">
-            <h1>A bit about me</h1>
+            <h2>A bit about me</h2>
             <img src="/media/about-picture.jpeg" id="about-pic" alt="ngoako picture">
-            <p>I’m <strong>Ngoako Gift Ramokgopa</strong> (you can call me Gift if you can’t pronounce my first name). I'm a <strong>Frontend Web Developer</strong> from Ga-Ramokgopa a dusty village in Polokwane, South Africa. I love doing Frontend Web Development. The design bug hit me at the early
-            age of 13 when my mother got a personal computer. I started playing around and creating stuff in MS paint and the rest is history.I like playing FIFA, watching series, and trying new things in my free time so don't be shy to suggest something
-            for me to try.</p>
-            <a class="primary-btn" href="/contact.html">Contact</a>
+            <p>I’m <strong>Ngoako Gift Ramokgopa</strong> (you can call me Gift if you can’t pronounce my first name).
+                I'm a <strong>Frontend Web Developer</strong> from Ga-Ramokgopa a dusty village in Polokwane, South
+                Africa. I love doing Frontend Web Development. The design bug hit me at the early
+                age of 13 when my mother got a personal computer. I started playing around and creating stuff in MS
+                paint and the rest is history.I like playing FIFA, watching series, and trying new things in my free
+                time so don't be shy to suggest something
+                for me to try.</p>
+            <a class="primary-btn" href="#contact">Contact</a>
             <a class="secondary-btn" href="media/ngoako-cv.pdf" target="_blank">View CV</a>
+        </section>
+        <section id="skills">
+            <h2 class="skill-title">My Skills/</h2>
+            <h2>Technologies</h2>
+            <div class="skills">
+                <p><i class="fab fa-html5"></i>HTML5</p>
+                <p><i class="fab fa-css3-alt"></i>CSS3</p>
+                <p><i class="fab fa-js"></i>JavaScript</p>
+                <p><i class="fab fa-github-square"></i>GIT(Github)</p>
+                <p><i class="fas fa-vector-square"></i>UI/UX Design</p>
+                <p><i class="fas fa-font"></i>Typography</p>
+                <p><i class="fab fa-figma"></i>Figma</p>
+            </div>
+            <a class="primary-btn" href="#contact">Contact</a>
+            <a class="secondary-btn" href="#about">About Me</a>
         </section>
         <footer>
             <div class="social-links">
-                <a href="https://github.com/Ngoakor12" target="_blank"><img src="/media/github-square-brands.svg" alt=""></a>
-                <a href="https://twitter.com/NgoakoRamz" target="_blank"><img src="/media/twitter-square-brands.svg" alt=""></a>
-                <a href="https://instagram.com/ngoakoramz" target="_blank"><img src="/media/instagram-square-brands.svg" alt=""></a>
+                <a href="https://github.com/Ngoakor12" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a href="https://twitter.com/NgoakoRamz" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://instagram.com/ngoakoramz" target="_blank"><i class="fab fa-instagram-square"></i></a>
             </div>
             <p>Copyright &copy; 2021. Ngoako Ramokgopa</p>
         </footer>
-    </div>
+        <div id="progressBar"></div>
+        <div id="progressBarContainer"></div>
+        <a onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up fa-"></i></a>
+    </main>
+
     <script src="script.js"></script>
 </body>
 
