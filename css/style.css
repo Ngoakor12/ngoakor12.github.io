@@ -561,20 +561,52 @@ button.submit:hover {
     padding-right: 10px;
 }
 
-#contact form{
+#contact form {
     grid-column: 2/12;
     margin: 20px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
+
+input#name {
+    grid-column: 1/-1;
+    grid-row: 1;
+    height: 53px;
+    background: var(--alice-blue);
+}
+
+input#email {
+    grid-column: 1/-1;
+    grid-row: 2;
+    height: 53px;
+    background: var(--alice-blue);
+}
+
+textarea {
+    grid-column: 1/-1;
+    grid-row: 3;
+    height: 106px;
+    overflow: scroll;
+    background: var(--alice-blue);
+}
+
+
+
 
 #contact input,
 textarea {
     font-family: "Open Sans", sans-serif;
     font-size: 18rem;
     min-width: 300px;
+    /* max-width: 600px; */
     margin: 10px 0;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 4px;
     color: var(--secondary);
+}
+
+label {
+    visibility: hidden;
 }
 
 button.submit {
@@ -582,8 +614,10 @@ button.submit {
     font-size: 18rem;
     cursor: pointer;
     background-color: var(--sea-green-crayola);
-    margin: 5px 0 30px 0;
+    margin: 10px 0 30px 0;
     min-width: 300px;
+    grid-column: 1/-1;
+    grid-row: 4;
 }
 
 
@@ -628,7 +662,7 @@ footer a i:hover {
 #myBtn i {
     font-size: 50rem;
     color: var(--sizzling-red);
-    
+
 }
 
 #myBtn i:hover {
@@ -647,39 +681,52 @@ nav {
 /*tablet styling*/
 
 @media (min-width: 620px) {
-    html{
-        font-size: 1.1px;
+    html {
+        font-size: 1.15px;
     }
+
     nav {
         visibility: visible;
     }
-    
-    .primary-btn,.secondary-btn{
+
+    .primary-btn,
+    .secondary-btn {
         max-width: 300px;
     }
-    #hero{
+
+    #hero {
         align-content: flex-start;
         align-items: flex-start;
     }
-    .hero-text>*{
+
+    .hero-text>* {
         align-items: flex-end;
         padding: 4px;
     }
 
+    input#name,
+    input#email,
+    textarea,
+    button.submit {
+        width: 300px;
+    }
 }
 
 
 /*laptop styling*/
- @media (min-width: 960px) {
-     html{
-         font-size: 1.15px;
-     }
+@media (min-width: 960px) {
+    html {
+        font-size: 1.20px;
+    }
 }
 
 /*desktop styling*/
 
 @media(min-width: 1360px) {
-    .hero-text,.hero-buttons,header{
+
+    .hero-text,
+    .hero-buttons,
+    header {
         grid-column: 3/11;
     }
 }
