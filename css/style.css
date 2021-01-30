@@ -798,6 +798,13 @@ nav {
         grid-column: 3/11;
     }
 
+    #work h2,
+    #work div,
+    #work a:nth-child(3),
+    #work a:nth-child(4) {
+        grid-column: 3/11;
+    }
+
     #skills h2:nth-child(1),
     #skills h2:nth-child(2),
     #skills div:nth-child(3) {
