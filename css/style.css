@@ -716,7 +716,7 @@ nav {
 
     #about p {
         /* width: 300px; */
-        margin: 0 0 30px 20px ;
+        margin: 0 0 30px 20px;
         border-radius: 5px;
         grid-column: 6/12;
         grid-row: 2;
@@ -727,7 +727,7 @@ nav {
         grid-column: 6/12;
         grid-row: 4;
         /* width: 300px; */
-        margin-left: 20px ;
+        margin-left: 20px;
 
     }
 
@@ -736,7 +736,7 @@ nav {
         grid-row: 5;
         /* width: 300px; */
         /* margin: 10px 0 30px 0; */
-        margin-left: 20px ;
+        margin-left: 20px;
     }
 
     input#name,
@@ -753,12 +753,14 @@ nav {
     html {
         font-size: 1.20px;
     }
+
     #about img {
         border-radius: 5px;
         grid-column: 2/6;
         /* max-width: 340px; */
 
     }
+
     #about p {
         border-radius: 5px;
         margin: 0 20px 0 40px;
@@ -768,6 +770,7 @@ nav {
         max-width: 450px;
 
     }
+
     #about a:nth-child(4) {
         /* grid-column: 6/12;
         grid-row: 4; */
@@ -778,8 +781,8 @@ nav {
     #about a:nth-child(5) {
         /* grid-column: 6/12;
         grid-row: 5; */
-        margin-left: 40px ;
-    } 
+        margin-left: 40px;
+    }
 
 
 
@@ -794,9 +797,22 @@ nav {
     header {
         grid-column: 3/11;
     }
-    #about h2{
+
+    #skills h2:nth-child(1),
+    #skills h2:nth-child(2),
+    #skills div:nth-child(3) {
         grid-column: 3/11;
     }
+
+    #skills a:nth-child(4),
+    #skills a:nth-child(5) {
+        grid-column: 3/11;
+    }
+
+    #about h2 {
+        grid-column: 3/11;
+    }
+
     #about img {
         border-radius: 5px;
         margin: 0 20px 0 0;
