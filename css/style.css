@@ -224,6 +224,10 @@ img.logo {
 } */
 nav a {
     padding: 10px;
+    text-transform: uppercase;
+    /* font-weight: 700; */
+    font-size: 15rem;
+    letter-spacing: 1px;
 }
 
 nav a:hover {
