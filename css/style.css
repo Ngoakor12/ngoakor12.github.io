@@ -731,10 +731,16 @@ nav {
 		grid-column: 3/11;
 	}
 
+	#work a.primary-btn,
+	#work a.secondary-btn,
 	#work h2,
 	#work div {
 		grid-column: 3/11;
 	}
+	/* #work a.primary-btn,
+    #work a.secondary-btn {
+        grid-column: 3/11;
+    } */
 
 	#skills h2:nth-child(1),
 	#skills h2:nth-child(2),
