@@ -42,7 +42,7 @@
 /*variables*/
 :root {
 	--primary: #00ffa3;
-	--secondary: #252c35;
+	--secondary: hsl(214, 18%, 18%);
 	--grey: #e0e0e0;
 	--sizzling-red: #ff475a;
 	--sea-green-crayola: rgba(71, 255, 188, 1);
@@ -386,6 +386,7 @@ nav .active {
 }
 
 #about p {
+	color: var(--secondary);
 	grid-column: 2/12;
 	grid-row: 3;
 	line-height: 30px;
