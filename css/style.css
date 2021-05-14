@@ -161,7 +161,7 @@ h2 {
 }
 
 #hero-wrapper {
-	background-image: url("/media/desktop-bg.jpg");
+	background-image: url("../media/desktop-bg.jpg");
 	min-height: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
