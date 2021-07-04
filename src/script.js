@@ -21,3 +21,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 // ----------------------------------------------
+
+// ---------Automate copyright year--------------------//
+document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+// ----------------------------------------------------//
