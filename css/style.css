@@ -90,6 +90,7 @@ li {
 /* Handle*/
 ::-webkit-scrollbar-thumb {
   background: var(--sea-green-crayola);
+  border-radius: 4px;
 }
 
 /* Handle on hover */
