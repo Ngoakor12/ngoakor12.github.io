@@ -245,7 +245,11 @@
             <i class="fas fa-phone-alt"></i>
             0716462122
           </p>
-          <form action="" class="contact-option2">
+          <form
+            class="contact-option2"
+            action="https://formsubmit.co/ngoakor12@gmail.com"
+            method="POST"
+          >
             <label for="name" class="name"
               >Name <br />
               <input
@@ -279,6 +283,15 @@
             </label>
             <br />
             <button type="submit" name="submit" class="submit">Submit</button>
+            <!-- form submit hidden fields -->
+            <!-- Auto Subject on receiver's email -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="Ngoako.com | Form message!"
+            />
+            <!-- Disable reCaptcha page for form senders -->
+            <input type="hidden" name="_captcha" value="false" />
           </form>
         </section>
       </main>
