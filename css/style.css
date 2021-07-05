@@ -535,30 +535,19 @@ button.submit:hover {
 #contact form {
   grid-column: 2/12;
   margin: 20px 0 0 0;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
 }
 
-input#name {
-  grid-column: 1/-1;
-  grid-row: 1;
+input#name,
+input#email,
+textarea {
   height: 53px;
   background: var(--alice-blue);
-}
-
-input#email {
-  grid-column: 1/-1;
-  grid-row: 2;
-  height: 53px;
-  background: var(--alice-blue);
+  border: none;
 }
 
 textarea {
-  grid-column: 1/-1;
-  grid-row: 3;
   height: 106px;
   overflow: scroll;
-  background: var(--alice-blue);
 }
 
 #contact input,
@@ -573,8 +562,9 @@ textarea {
   color: var(--secondary);
 }
 
-label {
-  visibility: hidden;
+textarea::placeholder,
+input::-webkit-input-placeholder {
+  color: #002b3d74;
 }
 
 button.submit {
@@ -633,10 +623,6 @@ footer a i:hover {
 #myBtn i:hover {
   color: var(--sea-green-crayola);
 }
-
-/* #myBtn:hover {
-    background-color: var(--sizzling-red);
-  } */
 
 /*mobile styling*/
 nav {
@@ -758,10 +744,6 @@ nav {
   #work div {
     grid-column: 3/11;
   }
-  /* #work a.primary-btn,
-    #work a.secondary-btn {
-        grid-column: 3/11;
-    } */
 
   #skills h2:nth-child(1),
   #skills h2:nth-child(2),
