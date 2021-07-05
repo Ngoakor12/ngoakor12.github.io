@@ -99,16 +99,19 @@
               />
               <div class="item-text">
                 <p class="item-title">Title</p>
-                <p class="item-description">A short description about the project and technologies used using custom tags</p>
-              <hr/>
+                <p class="item-description">
+                  A short description about the project and technologies used
+                  using custom tags
+                </p>
+                <hr />
               </div>
               <div class="item-links">
                 <a href="#" class="item-live"
-                  >Live <i class="fas fa-external-link-alt"></i
-                    ></i
-                ></a>
+                  >Live <i class="fas fa-external-link-alt"></i>
+                </a>
                 <a href="#" class="item-github"
-                  >Github <i class="fab fa-github"></i></a>
+                  >Github <i class="fab fa-github"></i
+                ></a>
               </div>
             </div>
             <div class="item">
@@ -120,16 +123,19 @@
               />
               <div class="item-text">
                 <p class="item-title">Title</p>
-                <p class="item-description">A short description about the project and technologies used using custom tags</p>
-              <hr/>
+                <p class="item-description">
+                  A short description about the project and technologies used
+                  using custom tags
+                </p>
+                <hr />
               </div>
               <div class="item-links">
                 <a href="#" class="item-live"
-                  >Live <i class="fas fa-external-link-alt"></i
-                    ></i
-                ></a>
+                  >Live <i class="fas fa-external-link-alt"></i>
+                </a>
                 <a href="#" class="item-github"
-                  >Github <i class="fab fa-github"></i></a>
+                  >Github <i class="fab fa-github"></i
+                ></a>
               </div>
             </div>
             <div class="item">
@@ -141,22 +147,24 @@
               />
               <div class="item-text">
                 <p class="item-title">Title</p>
-                <p class="item-description">A short description about the project and technologies used using custom tags</p>
-              <hr/>
+                <p class="item-description">
+                  A short description about the project and technologies used
+                  using custom tags
+                </p>
+                <hr />
               </div>
               <div class="item-links">
                 <a href="#" class="item-live"
-                  >Live <i class="fas fa-external-link-alt"></i
-                    ></i
-                ></a>
+                  >Live <i class="fas fa-external-link-alt"></i>
+                </a>
                 <a href="#" class="item-github"
-                  >Github <i class="fab fa-github"></i></a>
+                  >Github <i class="fab fa-github"></i
+                ></a>
               </div>
             </div>
-            </div>
-            <a class="primary-btn" href="#contact">Contact</a>
-            <a class="secondary-btn" href="#skills">Skills</a>
           </div>
+          <a class="primary-btn" href="#contact">Contact</a>
+          <a class="secondary-btn" href="#skills">Skills</a>
         </section>
         <section id="skills">
           <h2 class="skill-title">My Skills/</h2>
@@ -237,32 +245,53 @@
             <i class="fas fa-phone-alt"></i>
             0716462122
           </p>
-          <form action="" class="contact-option2">
-            <label for="name"></label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Name"
-              spellcheck="true"
-            />
+          <form
+            class="contact-option2"
+            action="https://formsubmit.co/ngoakor12@gmail.com"
+            method="POST"
+          >
+            <label for="name" class="name"
+              >Name <br />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="John Doe"
+                spellcheck="true"
+              />
+            </label>
             <br />
-            <label for="email"></label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-              spellcheck="true"
-            />
+            <label for="email" class="email"
+              >Email <br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="john.doe@example.com"
+                spellcheck="true"
+              />
+            </label>
             <br />
-            <textarea
-              name="message"
-              placeholder="Message"
-              spellcheck="true"
-            ></textarea>
+            <label for="textMessage" class="message"
+              >Message<br />
+              <textarea
+                name="message"
+                placeholder="....."
+                spellcheck="true"
+                id="textMessage"
+              ></textarea>
+            </label>
             <br />
             <button type="submit" name="submit" class="submit">Submit</button>
+            <!-- form submit hidden fields -->
+            <!-- Auto Subject on receiver's email -->
+            <input
+              type="hidden"
+              name="_subject"
+              value="Ngoako.com | Form message!"
+            />
+            <!-- Disable reCaptcha page for form senders -->
+            <input type="hidden" name="_captcha" value="false" />
           </form>
         </section>
       </main>
@@ -294,7 +323,7 @@
       </footer>
       <div id="progressBar"></div>
       <div id="progressBarContainer"></div>
-      <a  id="myBtn" title="Go to top">
+      <a id="myBtn" title="Go to top">
         <i class="fas fa-chevron-circle-up fa-"></i>
       </a>
     </div>
