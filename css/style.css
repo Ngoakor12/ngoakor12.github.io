@@ -116,6 +116,7 @@ h2 {
   color: var(--secondary);
 }
 p {
+  /* font-family: monospace; */
   font-size: 16rem;
   line-height: 24rem;
 }
@@ -124,6 +125,9 @@ h2 {
   padding-bottom: 10px;
   margin: 30px 0;
   border-bottom: var(--sea-green-crayola) 5px solid;
+}
+h3 {
+  color: var(--prussian-blue);
 }
 #hero-wrapper {
   background-image: url("../media/desktop-bg.jpg");
@@ -249,15 +253,17 @@ div.item {
   width: 280rem;
   max-width: 300rem;
   border-radius: 7px;
-  background-color: var(--alice-blue);
+  border: 1px solid var(--prussian-blue);
+  overflow: hidden;
 }
 div.item:hover {
   cursor: pointer;
+  background-color: var(--alice-blue);
 }
 .work-items img {
   max-width: 100%;
   height: auto;
-  border-radius: 4px 4px 0 0;
+  /* border-radius: 7px 7px 0 0; */
 }
 .item-title {
   font-size: 22rem;
@@ -281,7 +287,7 @@ hr {
 }
 .item-live:hover,
 .item-github:hover {
-  color: var(--secondary);
+  color: var(--prussian-blue);
   text-decoration: underline;
 }
 .item-live,
@@ -374,7 +380,7 @@ hr {
 button.submit {
   background: var(--sea-green-crayola);
   color: var(--secondary);
-  border: var(--sea-green-crayola) 4px solid;
+  border: var(--sea-green-crayola) 1px solid;
   border-radius: 5px;
   padding: 10px 80px;
   /* width: 300px; */
@@ -391,12 +397,12 @@ button.submit {
 #contact .primary-btn:hover {
   background: none;
   color: var(--alice-blue);
-  border: var(--sea-green-crayola) 4px solid;
+  border: var(--sea-green-crayola) 1px solid;
 }
 .secondary-btn {
   background: none;
   color: var(--secondary);
-  border: var(--secondary) 4px solid;
+  border: var(--secondary) 1px solid;
   border-radius: 5px;
   padding: 10px 20px;
   /* width: 300px; */
@@ -407,12 +413,12 @@ button.submit {
 #skills .secondary-btn {
   background: none;
   color: var(--alice-blue);
-  border: var(--alice-blue) 4px solid;
+  border: var(--alice-blue) 1px solid;
 }
 .primary-btn:hover {
   background: var(--secondary);
   color: var(--alice-blue);
-  border: var(--secondary) 4px solid;
+  border: var(--secondary) 1px solid;
 }
 #hero .primary-btn:hover,
 #skills .primary-btn:hover,
@@ -420,12 +426,12 @@ button.submit {
 button.submit:hover {
   background: var(--alice-blue);
   color: var(--secondary);
-  border: var(--alice-blue) 4px solid;
+  border: var(--alice-blue) 1px solid;
 }
 .secondary-btn:hover {
   background: var(--secondary);
   color: var(--alice-blue);
-  border: var(--secondary) 4px solid;
+  border: var(--secondary) 1px solid;
 }
 #hero .secondary-btn:hover,
 #skills .secondary-btn:hover,
@@ -433,7 +439,7 @@ button.submit:hover {
 button.submit:hover {
   background: var(--alice-blue);
   color: var(--secondary);
-  border: var(--alice-blue) 4px solid;
+  border: var(--alice-blue) 1px solid;
 }
 #contact {
   display: grid;
@@ -495,8 +501,9 @@ input::-webkit-input-placeholder {
   color: #002b3d74;
 }
 button.submit {
-  font-family: "open-sans-bold";
+  /* font-family: "open-sans-bold"; */
   font-size: 18rem;
+  font-weight: 700;
   cursor: pointer;
   background-color: var(--sea-green-crayola);
   margin: 10px 0 30px 0;
