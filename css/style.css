@@ -42,7 +42,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "open-sans-regular";
+  font-family: "montserrat";
+  font-weight: 300;
   font-size: 18rem;
   width: 100%;
   height: 100%;
@@ -89,7 +90,7 @@ html {
 }
 .primary-btn,
 .secondary-btn {
-  font-family: "open-sans-bold";
+  /* font-family: "open-sans-bold"; */
   font-size: 18rem;
   font-weight: bold;
   text-align: center;
@@ -101,8 +102,9 @@ p i {
 }
 h1,
 h2 {
-  font-family: "open-sans-extrabold";
+  /* font-family: "open-sans-extrabold"; */
   font-size: 36rem;
+  font-weight: 900;
 }
 .hero-heading {
   font-size: 40rem;
@@ -114,8 +116,8 @@ h2 {
   color: var(--secondary);
 }
 p {
-  font-size: 18rem;
-  line-height: 28rem;
+  font-size: 16rem;
+  line-height: 24rem;
 }
 /*base styling*/
 h2 {
@@ -152,9 +154,9 @@ img.logo {
 nav a {
   padding: 10px;
   text-transform: uppercase;
-  /* font-weight: 700; */
-  font-size: 15rem;
-  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 16rem;
+  /* letter-spacing: 1px; */
 }
 nav a:hover {
   color: var(--sea-green-crayola);
@@ -275,6 +277,7 @@ hr {
 }
 .item-links {
   padding: 10px 10px;
+  font-size: 18rem;
 }
 .item-live:hover,
 .item-github:hover {
@@ -477,8 +480,8 @@ textarea {
 
 #contact input,
 textarea {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18rem;
+  /* font-family: "Open Sans", sans-serif; */
+  font-size: 16rem;
   min-width: 300px;
   /* max-width: 600px; */
   margin: 10px 0;
