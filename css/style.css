@@ -42,7 +42,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "open-sans-regular";
+  font-family: "montserrat";
+  font-weight: 300;
   font-size: 18rem;
   width: 100%;
   height: 100%;
@@ -89,7 +90,7 @@ html {
 }
 .primary-btn,
 .secondary-btn {
-  font-family: "open-sans-bold";
+  /* font-family: "open-sans-bold"; */
   font-size: 18rem;
   font-weight: bold;
   text-align: center;
@@ -101,8 +102,9 @@ p i {
 }
 h1,
 h2 {
-  font-family: "open-sans-extrabold";
+  /* font-family: "open-sans-extrabold"; */
   font-size: 36rem;
+  font-weight: 900;
 }
 .hero-heading {
   font-size: 40rem;
@@ -114,14 +116,18 @@ h2 {
   color: var(--secondary);
 }
 p {
-  font-size: 18rem;
-  line-height: 28rem;
+  /* font-family: monospace; */
+  font-size: 16rem;
+  line-height: 24rem;
 }
 /*base styling*/
 h2 {
   padding-bottom: 10px;
   margin: 30px 0;
   border-bottom: var(--sea-green-crayola) 5px solid;
+}
+h3 {
+  color: var(--prussian-blue);
 }
 #hero-wrapper {
   background-image: url("../media/desktop-bg.jpg");
@@ -152,9 +158,9 @@ img.logo {
 nav a {
   padding: 10px;
   text-transform: uppercase;
-  /* font-weight: 700; */
-  font-size: 15rem;
-  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 16rem;
+  /* letter-spacing: 1px; */
 }
 nav a:hover {
   color: var(--sea-green-crayola);
@@ -247,15 +253,17 @@ div.item {
   width: 280rem;
   max-width: 300rem;
   border-radius: 7px;
-  background-color: var(--alice-blue);
+  border: 1px solid var(--prussian-blue);
+  overflow: hidden;
 }
 div.item:hover {
   cursor: pointer;
+  background-color: var(--alice-blue);
 }
 .work-items img {
   max-width: 100%;
   height: auto;
-  border-radius: 4px 4px 0 0;
+  /* border-radius: 7px 7px 0 0; */
 }
 .item-title {
   font-size: 22rem;
@@ -275,10 +283,11 @@ hr {
 }
 .item-links {
   padding: 10px 10px;
+  font-size: 18rem;
 }
 .item-live:hover,
 .item-github:hover {
-  color: var(--secondary);
+  color: var(--prussian-blue);
   text-decoration: underline;
 }
 .item-live,
@@ -371,7 +380,7 @@ hr {
 button.submit {
   background: var(--sea-green-crayola);
   color: var(--secondary);
-  border: var(--sea-green-crayola) 4px solid;
+  border: var(--sea-green-crayola) 1px solid;
   border-radius: 5px;
   padding: 10px 80px;
   /* width: 300px; */
@@ -388,12 +397,12 @@ button.submit {
 #contact .primary-btn:hover {
   background: none;
   color: var(--alice-blue);
-  border: var(--sea-green-crayola) 4px solid;
+  border: var(--sea-green-crayola) 1px solid;
 }
 .secondary-btn {
   background: none;
   color: var(--secondary);
-  border: var(--secondary) 4px solid;
+  border: var(--secondary) 1px solid;
   border-radius: 5px;
   padding: 10px 20px;
   /* width: 300px; */
@@ -404,12 +413,12 @@ button.submit {
 #skills .secondary-btn {
   background: none;
   color: var(--alice-blue);
-  border: var(--alice-blue) 4px solid;
+  border: var(--alice-blue) 1px solid;
 }
 .primary-btn:hover {
   background: var(--secondary);
   color: var(--alice-blue);
-  border: var(--secondary) 4px solid;
+  border: var(--secondary) 1px solid;
 }
 #hero .primary-btn:hover,
 #skills .primary-btn:hover,
@@ -417,12 +426,12 @@ button.submit {
 button.submit:hover {
   background: var(--alice-blue);
   color: var(--secondary);
-  border: var(--alice-blue) 4px solid;
+  border: var(--alice-blue) 1px solid;
 }
 .secondary-btn:hover {
   background: var(--secondary);
   color: var(--alice-blue);
-  border: var(--secondary) 4px solid;
+  border: var(--secondary) 1px solid;
 }
 #hero .secondary-btn:hover,
 #skills .secondary-btn:hover,
@@ -430,7 +439,7 @@ button.submit:hover {
 button.submit:hover {
   background: var(--alice-blue);
   color: var(--secondary);
-  border: var(--alice-blue) 4px solid;
+  border: var(--alice-blue) 1px solid;
 }
 #contact {
   display: grid;
@@ -477,8 +486,8 @@ textarea {
 
 #contact input,
 textarea {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18rem;
+  /* font-family: "Open Sans", sans-serif; */
+  font-size: 16rem;
   min-width: 300px;
   /* max-width: 600px; */
   margin: 10px 0;
@@ -492,8 +501,9 @@ input::-webkit-input-placeholder {
   color: #002b3d74;
 }
 button.submit {
-  font-family: "open-sans-bold";
+  /* font-family: "open-sans-bold"; */
   font-size: 18rem;
+  font-weight: 700;
   cursor: pointer;
   background-color: var(--sea-green-crayola);
   margin: 10px 0 30px 0;
