@@ -44,7 +44,7 @@ html {
 body {
   font-family: "montserrat";
   font-weight: 300;
-  font-size: 18rem;
+  font-size: 16rem;
   width: 100%;
   height: 100%;
   min-width: 300px;
@@ -124,7 +124,7 @@ p {
 h2 {
   padding-bottom: 10px;
   margin: 30px 0;
-  border-bottom: var(--sea-green-crayola) 5px solid;
+  /* border-bottom: var(--sea-green-crayola) 5px solid; */
 }
 h3 {
   color: var(--prussian-blue);
@@ -208,7 +208,7 @@ nav .active {
   grid-column: 2/12;
   grid-row: 1;
   /* min-width: 300px; */
-  height: 53px;
+  height: 48px;
   margin: 10px 0;
   display: block;
 }
@@ -217,7 +217,7 @@ nav .active {
   grid-row: 2;
   margin: 10px 0;
   /* min-width: 300px; */
-  height: 53px;
+  height: 48px;
   display: block;
 }
 #work {
@@ -471,10 +471,16 @@ button.submit:hover {
   margin: 20px 0 0 0;
 }
 
+label.name,
+label.email,
+label.message {
+  font-size: 16rem !important;
+}
+
 input#name,
 input#email,
 textarea {
-  height: 53px;
+  height: 48px;
   background: var(--alice-blue);
   border: none;
 }
@@ -487,7 +493,7 @@ textarea {
 #contact input,
 textarea {
   /* font-family: "Open Sans", sans-serif; */
-  font-size: 16rem;
+  font-size: 16rem !important;
   min-width: 300px;
   /* max-width: 600px; */
   margin: 10px 0;
@@ -635,7 +641,7 @@ nav {
   #about a:nth-child(4) {
     /* grid-column: 6/12;
         grid-row: 4; */
-    margin: 40px 20px 10px 40px;
+    margin: 40px 20px 0 40px;
   }
   #about a:nth-child(5) {
     /* grid-column: 6/12;
