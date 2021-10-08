@@ -254,27 +254,21 @@ div.item {
   max-width: 300rem;
   border-radius: 7px;
   border: 1px solid var(--prussian-blue);
-  /* overflow: hidden; */
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* align-content: flex-start; */
   justify-content: space-between;
 }
 
-/* .image-title-description {
-  margin: 3rem 0;
-} */
 div.item:hover {
   cursor: pointer;
   background-color: var(--alice-blue);
 }
 .work-items img {
   max-width: 100%;
-  /* height: auto; */
   border-radius: 7px 7px 0 0;
 }
-.item-text {
-}
+
 .item-title {
   font-size: 22rem;
   font-weight: bold;
