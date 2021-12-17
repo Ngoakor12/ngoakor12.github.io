@@ -26,7 +26,7 @@
 :root {
   --primary: #00ffa3;
   --secondary: hsl(214, 18%, 18%);
-  --grey: #e0e0e0;
+  --grey: #f8f8f8;
   --sizzling-red: #ff475a;
   --sea-green-crayola: rgba(71, 255, 188, 1);
   --alice-blue: #eef7ff;
@@ -49,6 +49,7 @@ body {
   height: 100%;
   min-width: 300px;
   margin: 0;
+  background-color: var(--grey);
 }
 body,
 p,
@@ -77,12 +78,12 @@ li {
 }
 /* Handle*/
 ::-webkit-scrollbar-thumb {
-  background: var(--sea-green-crayola);
+  background-color: #3b3b3b;
   border-radius: 4px;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--sizzling-red);
+  background-color: #4b4b4b;
 }
 /*fonts*/
 html {
@@ -161,6 +162,8 @@ nav a {
   font-weight: 400;
   font-size: 16rem;
   /* letter-spacing: 1px; */
+  transition: color 0.4s, background 0.4s;
+  transition-timing-function: ease;
 }
 nav a:hover {
   color: var(--sea-green-crayola);
@@ -250,32 +253,40 @@ a.secondary-btn {
   display: block;
 }
 div.item {
-  width: 280rem;
-  max-width: 300rem;
+  background-color: white;
+  min-width: 180rem;
+  max-width: 280rem;
   border-radius: 7px;
-  border: 1px solid var(--prussian-blue);
+  border: 1px solid #8c8b8b;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.4s, background-color 0.4s;
 }
 
 div.item:hover {
+  outline: 2px solid #8c8b8b;
   cursor: pointer;
-  background-color: var(--alice-blue);
+  border: 1px solid #8c8b8b;
+  /* background-color: var(--alice-blue); */
+  transform: translateY(-4px);
 }
 .work-items img {
   max-width: 100%;
-  border-radius: 7px 7px 0 0;
+  /* max-height: 0%; */
+  /* border-radius: 7px 7px 0 0; */
 }
 
 .item-title {
-  font-size: 22rem;
+  font-size: 28rem;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 20px 20px 20px 10px;
+  line-height: 24rem;
 }
 .item-description {
-  padding: 0 10px 5px 10px;
+  padding: 0 20px 20px 20px;
+  line-height: 1.6;
 }
 hr {
   border: 0;
@@ -287,20 +298,25 @@ hr {
   margin-bottom: 10rem;
 }
 .item-links {
-  padding: 10px 10px;
+  display: flex;
+  padding: 20px;
   font-size: 18rem;
+  font-weight: 700;
+  column-gap: 20px;
+  justify-content: flex-start;
 }
 .item-live,
 .item-github {
   color: var(--prussian-blue);
+  border-bottom: 2px solid transparent;
+  /* transition: border 0.5s; */
 }
-.item-github {
-  padding-left: 20px;
-}
+
 .item-live:hover,
 .item-github:hover {
   color: var(--prussian-blue);
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  border-bottom: 2px solid var(--prussian-blue);
 }
 #skills {
   display: grid;
@@ -366,7 +382,7 @@ hr {
   color: var(--secondary);
   grid-column: 2/12;
   grid-row: 3;
-  line-height: 30px;
+  line-height: 1.6;
   margin: 20px 0 0 0;
   max-width: 600px;
 }
@@ -391,6 +407,8 @@ button.submit {
   /* width: 300px; */
   text-transform: uppercase;
   display: inline-block;
+  transition: color 0.1s, background 0.4s;
+  transition-timing-function: ease;
 }
 .primary-btn:hover {
   background: var(--secondary);
@@ -413,6 +431,8 @@ button.submit {
   /* width: 300px; */
   text-transform: uppercase;
   display: inline-block;
+  transition: color 0.4s, background 0.4s;
+  transition-timing-function: ease;
 }
 #hero .secondary-btn,
 #skills .secondary-btn {
@@ -534,11 +554,14 @@ footer a {
 }
 footer a i {
   font-size: 40rem;
-  margin: 10px;
+  padding: 10px;
   color: var(--secondary);
+  transition: color 0.4s, transform 0.4s;
+  transition-timing-function: ease;
 }
 footer a i:hover {
   color: var(--sizzling-red);
+  transform: translateY(-4px);
 }
 /* Scroll to top button */
 #myBtn {
@@ -557,6 +580,8 @@ footer a i:hover {
 #myBtn i {
   font-size: 50rem;
   color: var(--sizzling-red);
+  transition: color 0.4s, background 0.4s;
+  transition-timing-function: ease;
 }
 #myBtn i:hover {
   color: var(--sea-green-crayola);
@@ -572,17 +597,21 @@ nav {
 }
 
 .tech-stack-tags {
-  padding: 0 10px 10px 10px;
+  display: flex;
+  /* padding: 0 10px 10px 10px; */
+  padding: 0 20px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 .tech-stack-tag {
-  display: inline-block;
+  /* display: inline-block; */
   border-radius: 40px;
   font-size: 10px;
-  padding: 1px 5px;
+  padding: 0 10px;
   font-weight: 700;
   color: var(--prussian-blue);
   /* opacity: 0.5; */
-  background-color: var(--sea-green-crayola);
+  background-color: rgb(136, 255, 211);
 }
 
 /*tablet styling*/
