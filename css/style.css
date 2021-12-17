@@ -279,12 +279,14 @@ div.item:hover {
 }
 
 .item-title {
-  font-size: 24rem;
+  font-size: 28rem;
   font-weight: bold;
-  padding: 5px 20px;
+  padding: 20px 20px 20px 10px;
+  line-height: 24rem;
 }
 .item-description {
-  padding: 10px 20px;
+  padding: 0 20px 20px 20px;
+  line-height: 1.6;
 }
 hr {
   border: 0;
@@ -380,7 +382,7 @@ hr {
   color: var(--secondary);
   grid-column: 2/12;
   grid-row: 3;
-  line-height: 30px;
+  line-height: 1.6;
   margin: 20px 0 0 0;
   max-width: 600px;
 }
@@ -599,6 +601,7 @@ nav {
   /* padding: 0 10px 10px 10px; */
   padding: 0 20px;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .tech-stack-tag {
   /* display: inline-block; */
