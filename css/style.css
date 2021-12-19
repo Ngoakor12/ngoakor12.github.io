@@ -512,7 +512,6 @@ textarea {
 
 textarea {
   height: 106px;
-  overflow: scroll;
 }
 
 #contact input,
@@ -531,6 +530,16 @@ textarea::placeholder,
 input::-webkit-input-placeholder {
   color: #002b3d74;
 }
+
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+input:focus-visible,
+textarea:focus-visible,
+button.submit:focus-visible {
+  outline: 3px solid #8c8b8b;
+}
 button.submit {
   /* font-family: "open-sans-bold"; */
   font-size: 18rem;
@@ -548,9 +557,12 @@ footer {
   padding: 25px;
   background: var(--alice-blue);
 }
-footer a {
+footer > a {
   /* max-width: 40px; */
-  margin: 30px auto;
+  /* margin: 30px auto; */
+  color: red;
+  margin: 0;
+  padding: 0;
 }
 footer a i {
   font-size: 40rem;
