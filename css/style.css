@@ -224,6 +224,7 @@ nav .active {
   display: block;
 }
 #work {
+  margin: 40px 0 100px 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -262,15 +263,18 @@ div.item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transform: scale(99%);
   transition: transform 0.4s, background-color 0.4s;
+  transform-origin: center;
 }
 
 div.item:hover {
   outline: 2px solid #8c8b8b;
-  cursor: pointer;
+  /* cursor: pointer; */
   border: 1px solid #8c8b8b;
   /* background-color: var(--alice-blue); */
-  transform: translateY(-4px);
+  transform-origin: center;
+  transform: translateY(-3px);
 }
 .work-items img {
   max-width: 100%;
@@ -279,14 +283,21 @@ div.item:hover {
 }
 
 .item-title {
-  font-size: 28rem;
-  font-weight: bold;
+  font-size: 22rem;
+  font-weight: 700;
   padding: 20px;
   line-height: 24rem;
 }
 .item-description {
+  color: #8c8b8b;
+  font-weight: 400;
   padding: 0 20px 20px 20px;
   line-height: 1.6;
+  /* height: 75rem; */
+  overflow: hidden;
+  /* min-height: 80rem; */
+  /* max-height: 100rem; */
+  /* text-overflow: ellipsis; */
 }
 hr {
   border: 0;
@@ -300,28 +311,30 @@ hr {
 .item-links {
   display: flex;
   padding: 20px;
-  font-size: 18rem;
+  /* font-size: 18rem; */
   font-weight: 700;
   column-gap: 20px;
   justify-content: flex-start;
 }
+
 .item-live,
 .item-github {
   color: var(--prussian-blue);
-  border-bottom: 2px solid transparent;
-  /* transition: border 0.5s; */
+  border-bottom: 3px solid transparent;
+  /* border-bottom-width: 0; */
+  transition: border 0.4s;
 }
 
 .item-live:hover,
 .item-github:hover {
   color: var(--prussian-blue);
   /* text-decoration: underline; */
-  border-bottom: 2px solid var(--prussian-blue);
+  border-bottom: 3px solid rgb(184, 255, 229);
 }
 #skills {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 20px 0;
+  padding: 80px 0;
 }
 #skills h2:nth-child(1) {
   grid-column: 2/12;
@@ -365,7 +378,7 @@ hr {
 #about {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 20px 0;
+  padding: 60px 0;
 }
 #about h2 {
   grid-column: 2/12;
@@ -399,6 +412,7 @@ hr {
 }
 .primary-btn,
 button.submit {
+  font-family: "Montserrat", sans-serif;
   background: var(--sea-green-crayola);
   color: var(--secondary);
   border: var(--sea-green-crayola) 1px solid;
@@ -469,7 +483,7 @@ button.submit:hover {
 #contact {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  padding: 20px 0;
+  padding: 60px 0;
 }
 #contact h2 {
   grid-column: 2/12;
@@ -512,11 +526,11 @@ textarea {
 
 textarea {
   height: 106px;
-  overflow: scroll;
 }
 
 #contact input,
 textarea {
+  font-family: "Montserrat", sans-serif;
   /* font-family: "Open Sans", sans-serif; */
   font-size: 16rem !important;
   min-width: 300px;
@@ -530,6 +544,16 @@ textarea {
 textarea::placeholder,
 input::-webkit-input-placeholder {
   color: #002b3d74;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+input:focus-visible,
+textarea:focus-visible,
+button.submit:focus-visible {
+  outline: 3px solid #8c8b8b;
 }
 button.submit {
   /* font-family: "open-sans-bold"; */
@@ -548,9 +572,12 @@ footer {
   padding: 25px;
   background: var(--alice-blue);
 }
-footer a {
+footer > a {
   /* max-width: 40px; */
-  margin: 30px auto;
+  /* margin: 30px auto; */
+  color: red;
+  margin: 0;
+  padding: 0;
 }
 footer a i {
   font-size: 40rem;
@@ -609,10 +636,30 @@ nav {
   font-size: 10px;
   padding: 0 10px;
   font-weight: 700;
-  color: var(--prussian-blue);
+  color: #8c8b8b;
   /* opacity: 0.5; */
-  background-color: rgb(136, 255, 211);
+  background-color: rgb(184, 255, 229);
 }
+
+/* MEDIA QUERIES */
+/* @media (min-width: 350px) {
+  #work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div.work-items { */
+/* display: grid;
+    max-width: 100%;
+    min-width: 100%;
+    grid-template-columns: repeat(3, minmax(180rem, 280rem));
+    column-gap: 2em; */
+/* justify-content: center; */
+/* display: flex; */
+/* flex-direction: row; */
+/* flex-wrap: wrap; */
+/* }
+} */
 
 /*tablet styling*/
 @media (min-width: 620px) {
