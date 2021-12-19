@@ -412,6 +412,7 @@ hr {
 }
 .primary-btn,
 button.submit {
+  font-family: "Montserrat", sans-serif;
   background: var(--sea-green-crayola);
   color: var(--secondary);
   border: var(--sea-green-crayola) 1px solid;
@@ -529,6 +530,7 @@ textarea {
 
 #contact input,
 textarea {
+  font-family: "Montserrat", sans-serif;
   /* font-family: "Open Sans", sans-serif; */
   font-size: 16rem !important;
   min-width: 300px;
