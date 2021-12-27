@@ -1,27 +1,6 @@
-@font-face {
-  font-family: "open-sans-regular";
-  src: local("open-sans");
-  src: url("../fonts/open-sans-regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "open-sans-bold";
-  src: local("open-sans");
-  src: url("../fonts/open-sans-bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "open-sans-extrabold";
-  src: local("open-sans");
-  src: url("../fonts/open-sans-extrabold.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
+/* load fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*variables*/
 :root {
   --primary: #00ffa3;
@@ -42,8 +21,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "montserrat";
-  font-weight: 300;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
   font-size: 16rem;
   width: 100%;
   height: 100%;
@@ -93,7 +72,7 @@ html {
 .secondary-btn {
   /* font-family: "open-sans-bold"; */
   font-size: 18rem;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
 }
 a,
@@ -109,7 +88,7 @@ h2 {
 }
 .hero-heading {
   font-size: 40rem;
-  font-weight: 800;
+  font-weight: 900;
   line-height: 44px;
 }
 #work p,
@@ -159,7 +138,7 @@ img.logo {
 nav a {
   padding: 10px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16rem;
   /* letter-spacing: 1px; */
   transition: color 0.4s, background 0.4s;
@@ -286,11 +265,11 @@ div.item:hover {
   font-size: 22rem;
   font-weight: 700;
   padding: 20px;
-  line-height: 24rem;
+  line-height: 22rem;
 }
 .item-description {
   color: #8c8b8b;
-  font-weight: 400;
+  font-weight: 500;
   padding: 0 20px 20px 20px;
   line-height: 1.6;
   /* height: 75rem; */
@@ -597,7 +576,7 @@ footer a i:hover {
   bottom: 20px;
   right: 20px;
   z-index: 99;
-  font-weight: 900;
+  font-weight: 700;
   border: none;
   outline: none;
   cursor: pointer;
